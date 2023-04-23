@@ -1,7 +1,0 @@
-{
-  "watch": [
-    "src/",
-    "../../libs/simpd-api-lib/src"
-  ],
-  "ext": "ts"
-}
