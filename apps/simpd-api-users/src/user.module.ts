@@ -1,8 +1,8 @@
 import {Module} from '@nestjs/common';
 import {UserEntity} from './user.entity';
+import {UserResolver} from './user.resolver';
 import {UserRepository} from './user.repository';
 import {GraphQLModule, DatabaseModule, CommonModule} from '@simpd/api-lib';
-import {UserResolver} from './user.resolver';
 
 @Module({
   imports: [
@@ -15,4 +15,4 @@ import {UserResolver} from './user.resolver';
   ],
   providers: [UserRepository, UserResolver],
 })
-export class UsersModule {}
+export class UserModule {}
