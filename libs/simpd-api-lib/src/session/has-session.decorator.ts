@@ -1,6 +1,6 @@
 import {UseGuards} from '@nestjs/common';
-import {HasSessionGuard} from './has-session.guard';
+import {SessionIsValidGuard} from './session-is-valid.guard';
 
 export function HasSession() {
-  return UseGuards(HasSessionGuard);
+  return UseGuards(SessionIsValidGuard);
 }
