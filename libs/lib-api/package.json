@@ -1,0 +1,50 @@
+{
+  "name": "@simpd/lib-api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/types",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm run clean && pnpm run compile",
+    "clean": "rimraf -rf ./dist && rimraf -rf ./build",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "pg": "8.10.0",
+    "@golevelup/nestjs-rabbitmq": "3.6.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.2",
+    "@nestjs/common": "*",
+    "@nestjs/core": "*",
+    "@nestjs/graphql": "*",
+    "@nestjs/apollo": "*",
+    "@nestjs/typeorm": "*",
+    "@nestjs/platform-express": "*",
+    "@apollo/server": "*",
+    "typeorm": "*",
+    "@nestjs/microservices": "*",
+    "@nestjs/jwt": "*",
+    "express": "*",
+    "@types/express": "4.17.17",
+    "@simpd/lib-client": "workspace:*",
+    "rxjs": "*"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "*",
+    "@nestjs/core": "*",
+    "@nestjs/graphql": "*",
+    "@nestjs/apollo": "*",
+    "@nestjs/typeorm": "*",
+    "@nestjs/jwt": "*",
+    "@nestjs/platform-express": "*",
+    "@apollo/server": "*",
+    "typeorm": "*",
+    "express": "*",
+    "@simpd/lib-client": "workspace:*",
+    "rxjs": "*"
+  }
+}
