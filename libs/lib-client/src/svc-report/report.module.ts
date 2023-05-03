@@ -1,8 +1,8 @@
-import { Module } from '@nestjs/common';
-import { NATS_ADDRESS } from '../constants';
-import { SVC_REPORT_NAME } from './report.const';
-import { ReportClientService } from './report-client.service';
-import { ClientsModule, Transport } from '@nestjs/microservices';
+import {Module} from '@nestjs/common';
+import {NATS_ADDRESS} from '../constants';
+import {SVC_REPORT_NAME} from './report.const';
+import {ReportClientService} from './report-client.service';
+import {ClientsModule, Transport} from '@nestjs/microservices';
 
 @Module({
   imports: [
@@ -19,4 +19,4 @@ import { ClientsModule, Transport } from '@nestjs/microservices';
   providers: [ReportClientService],
   exports: [ReportClientService],
 })
-export class ReportClientModule { }
+export class ReportClientModule {}
