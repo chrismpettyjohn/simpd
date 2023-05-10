@@ -1,9 +1,9 @@
-import React from 'react'
 import './SignIn.css';
+import React from 'react'
+import { Link } from 'wouter';
 import { Helmet } from 'react-helmet';
-import { PostCard } from 'components/post-card/PostCard';
-import { PageTitle } from 'components/page-title/PageTitle';
 import { Card } from 'components/card/Card';
+import { PageTitle } from 'components/page-title/PageTitle';
 
 export function SignInScreen() {
   return (
@@ -12,7 +12,7 @@ export function SignInScreen() {
         <title>Simpd</title>
         <meta property="og:title" content="Simpd" />
       </Helmet>
-      <PageTitle title="Sign In" />
+      <PageTitle title="Sign in" />
       <Card>
         <div style={{ width: '100%', overflow: 'hidden' }}>
           <label className="landing-page-text1">Email</label>
@@ -30,17 +30,17 @@ export function SignInScreen() {
             className="landing-page-textinput1 input"
           />
           <div className="landing-page-container4">
-            <button className="landing-page-button button">
-              Create an account for free
-            </button>
-            <button disabled className="landing-page-button1 button">
+            <Link to="/create-account">
+              <button className="landing-page-button button" type="button">
+                Create an account for free
+              </button>
+            </Link>
+            <button disabled className="landing-page-button1 button" type="submit">
               Sign in
             </button>
           </div>
         </div>
       </Card>
-      <PostCard />
-      <PostCard />
     </>
   )
 }
