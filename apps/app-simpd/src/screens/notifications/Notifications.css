@@ -1,0 +1,26 @@
+.notifications-container1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  margin-top: var(--dl-space-space-twounits);
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.notifications-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notifications-text {
+  color: var(--dl-color-simpd-s90);
+  font-size: 1.83rem;
+  align-self: center;
+}
