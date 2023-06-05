@@ -11,7 +11,7 @@ export function SettingsIdentityScreen() {
         <title>Settings-Identity - Simpd</title>
         <meta property="og:title" content="Settings-Identity - Simpd" />
       </Helmet>
-      <PageTitle title="Settings" />
+      <PageTitle title="Settings-Identity" />
       <SettingsNavigation />
       <SwitchProfileCard />
     </>
