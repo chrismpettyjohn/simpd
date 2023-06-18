@@ -13,15 +13,14 @@ export class SubscriptionGroupEntity {
   @PrimaryGeneratedColumn()
   id?: number;
 
-  @Column({name: 'profile_id'})
-  @Index()
-  profileID!: number;
-
   @Column()
   name!: string;
 
   @Column({type: 'text'})
   description!: string;
+
+  @Column({type: 'numeric', precision: 2})
+  monthlyCost!: number;
 
   @CreateDateColumn({name: 'created_at', type: 'timestamp'})
   createdAt?: Date;
